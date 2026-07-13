@@ -14,6 +14,20 @@ Based on the detection results, the system determines the overall safety status 
 - Visual Studio Code (optional)
 - Python libraries (Tkinter, cv2, threading, time, YOLO, sys, PIL)
 
+## Video Demo
+The system is capable of processing videos in various file formats and resolution levels. Higher-resolution videos generally provide sharper visual details, enabling the system to detect objects more accurately and reliably.
 
+### Video demo details :
+- Length : 02:59
+- Frame width : 1280
+- Frame height : 720
+- Frame rate : 30.00 frames/second
 
+> ### Graphical User Interface <a name = 'gui'></a>
 
+The GUI consists of several main components that support the operation of the application, including:
+
+* **Video preview area**, which displays the selected video before the detection process begins.
+* **"Select Video"** feature, which allows users to browse and upload the video to be processed by the system.
+* **"Start Detection"** feature, which initiates the detection process after a video has been successfully uploaded.
+* **"Exit"** feature, which closes the application and terminates the system.
