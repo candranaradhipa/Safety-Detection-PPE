@@ -56,6 +56,8 @@ https://github.com/user-attachments/assets/b9c156a9-0ebc-4b07-9c49-3d5cec5d1a65
 
 ## Contributor
 [**Candra Naradhipa Cahyakusuma**](https://github.com/candranaradhipa)
+
 [Robotics and AI Engineering](https://ftmm.unair.ac.id/teknik-robotika-dan-kecerdasan-buatan-program-studi/), [Universitas Airlangga](https://unair.ac.id/)
+
 <candradhipa16@gmail.com>
 
