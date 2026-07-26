@@ -23,7 +23,8 @@ The system is capable of processing videos in various file formats and resolutio
 - Frame height : 720
 - Frame rate : 30.00 frames/second
 
-https://github.com/candranaradhipa/Safety-Detection-PPE/blob/main/Safety%20Detection%20Testing.mp4
+https://github.com/user-attachments/assets/18b872fe-2cb3-4511-a333-cddbdd7a0dce
+
 
 > ### Graphical User Interface <a name = 'gui'></a>
 
