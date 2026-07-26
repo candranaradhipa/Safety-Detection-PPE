@@ -34,3 +34,26 @@ The GUI consists of several main components that support the operation of the ap
 * **"Select Video"** feature, which allows users to browse and upload the video to be processed by the system.
 * **"Start Detection"** feature, which initiates the detection process after a video has been successfully uploaded.
 * **"Exit"** feature, which closes the application and terminates the system.
+
+<img width="1037" height="895" alt="image" src="https://github.com/user-attachments/assets/9b9890df-9ace-4654-84b2-6d69e019adc4" />
+
+> ### Previewing The Uploaded Video <a name = 'preview'></a>
+
+After the video has been successfully uploaded into the system, it will first be displayed in a preview format to allow the user to ensure that the selected file is correct and corresponds to the video intended for detection. This preview feature enables users to verify the video content before the detection process begins, thereby reducing the possibility of selecting an incorrect video.
+
+<img width="1097" height="756" alt="image" src="https://github.com/user-attachments/assets/ad318d98-9951-499d-b9e4-68b821aad327" />
+
+> ### Detection System Workflow <a name = 'Workflow'></a>
+
+Technically, this code works by capturing the video stream from a camera or CCTV system through `cv2.VideoCapture`, then loading a trained YOLO model from the `best.pt` file to perform inference on each frame repeatedly within the main loop. Each frame that is successfully read is sent to the model using `model(img, stream=True)`, after which the detection results are processed one by one to extract the bounding box coordinates, confidence score, and class index. The class index is then matched with the previously defined list of class names. After that, the system applies a confidence threshold, assigns green color to safe PPE classes, red color to violation classes such as `No-Helmet` or `No-Mask`, and plays an alarm through `pygame` using `threading` so that the sound can run without interrupting the detection process, while the alarm delay is controlled to prevent it from sounding continuously. The final results are displayed directly in the video window with labels and bounding boxes, and the program stops when the user presses the `q` key, after which the camera is released and all windows are closed.
+
+> ### Application Simulation Video <a name = 'Apps'></a>
+
+Simulation Video of the System with an Integrated GUI Application
+
+
+https://github.com/user-attachments/assets/b9c156a9-0ebc-4b07-9c49-3d5cec5d1a65
+
+
+
+
